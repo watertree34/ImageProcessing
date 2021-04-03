@@ -17,8 +17,8 @@ def print_matInfo(name,image):
     print("%12s: depth(%s), channels(%s) -> mat_type(%sC%d)"%(name, image.dtype,nchannel,mat_type,nchannel))
 
 title1, title2='gray2gray','gray2color'
-gray2gray= cv2.imread("./src/read_gray.png", cv2.IMREAD_GRAYSCALE)
-gray2color=cv2.imread("./src/read_gray.png",cv2.IMREAD_COLOR)
+gray2gray= cv2.imread("src/read_gray.png", cv2.IMREAD_GRAYSCALE)
+gray2color=cv2.imread("src/read_gray.png", cv2.IMREAD_COLOR)
 
 if gray2gray is None or gray2color is None:
     raise Exception("영상 파일 읽기 에러")

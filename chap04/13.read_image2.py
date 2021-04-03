@@ -2,8 +2,8 @@ import cv2
 from Common.utils import print_matInfo
 
 title1, title2 = 'color2gray', 'color2color'
-color2gray=cv2.imread("./src/read_gray.png",cv2.IMREAD_GRAYSCALE)
-color2color=cv2.imread("./src/read_gray.png",cv2.IMREAD_COLOR)
+color2gray=cv2.imread("src/read_gray.png", cv2.IMREAD_GRAYSCALE)
+color2color=cv2.imread("src/read_gray.png", cv2.IMREAD_COLOR)
 if color2gray is None or color2color is None:
     raise Exception("영상파일 읽기 에러")
 
